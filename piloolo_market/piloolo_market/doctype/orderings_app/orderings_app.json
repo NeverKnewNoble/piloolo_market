@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Order-{#####}",
+ "creation": "2024-10-04 09:25:18.215659",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "order_status_section",
+  "status",
+  "column_break_essq",
+  "currency",
+  "section_break_frgr",
+  "items",
+  "items_prchased_section",
+  "total_amount",
+  "column_break_gooe",
+  "shipping_fee",
+  "shipping_info_section",
+  "email",
+  "location",
+  "city",
+  "stateprovidence_option",
+  "column_break_bfkb",
+  "usr_first_name",
+  "postzip_code",
+  "address_line_1",
+  "column_break_uqrf",
+  "usr_last_name",
+  "phone_number",
+  "address_line_2_optional"
+ ],
+ "fields": [
+  {
+   "fieldname": "items_prchased_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Int",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "column_break_gooe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_fee",
+   "fieldtype": "Int",
+   "label": "Shipping Fee"
+  },
+  {
+   "fieldname": "section_break_frgr",
+   "fieldtype": "Section Break",
+   "label": "Items Prchased"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "ordered Items"
+  },
+  {
+   "fieldname": "shipping_info_section",
+   "fieldtype": "Section Break",
+   "label": "Shipping Info"
+  },
+  {
+   "fieldname": "usr_first_name",
+   "fieldtype": "Data",
+   "label": "Usr First Name"
+  },
+  {
+   "fieldname": "column_break_uqrf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "usr_last_name",
+   "fieldtype": "Data",
+   "label": "Usr Last Name"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "label": "Location",
+   "options": "\nGhana\nUSA\nUK\nCanada"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "stateprovidence_option",
+   "fieldtype": "Data",
+   "label": "State/Providence (option)"
+  },
+  {
+   "fieldname": "postzip_code",
+   "fieldtype": "Data",
+   "label": "Post/Zip Code"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2_optional",
+   "fieldtype": "Data",
+   "label": "Address Line 2 (optional)"
+  },
+  {
+   "fieldname": "column_break_bfkb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "order_status_section",
+   "fieldtype": "Section Break",
+   "label": "Order Status"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending\nProcessing\nShipped\nDelivered\nCancelled"
+  },
+  {
+   "fieldname": "column_break_essq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-09 05:32:42.157196",
+ "modified_by": "Administrator",
+ "module": "Piloolo Market",
+ "name": "Orderings App",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

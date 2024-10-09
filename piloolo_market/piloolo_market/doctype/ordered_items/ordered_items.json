@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-04 00:50:03.404164",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "item_price",
+  "size",
+  "quantity"
+ ],
+ "fields": [
+  {
+   "fetch_from": "item_price.item_name",
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item Price"
+  },
+  {
+   "fetch_from": "item.price_list_rate",
+   "fieldname": "item_price",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Price",
+   "options": "Item Price"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-05 12:10:30.114236",
+ "modified_by": "Administrator",
+ "module": "Piloolo Market",
+ "name": "ordered Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

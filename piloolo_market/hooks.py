@@ -139,11 +139,39 @@ app_license = "mit"
 
 # doc_events = {
 # 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
+# 		"on_update": "piloolo_market.api.call_items.get_items",
+#         "on_update": "piloolo_market.api.call_man_cloths.male_items",
+#         "on_update": "piloolo_market.api.african_cloth.african_items",
+# 		"on_update": "piloolo_market.api.women_cloth.female_items",
+
 # 	}
 # }
+
+# hooks.py
+doc_events = {
+    "Doctype1": {
+        "on_update": "piloolo_market.api.call_items.get_items"
+    },
+    "Doctype2": {
+        "on_update": "piloolo_market.api.call_man_cloths.male_items"
+    },
+    "Doctype3": {
+        "on_update": "piloolo_market.api.african_cloth.african_items"
+    },
+    "Doctype4": {
+        "on_update": "piloolo_market.api.women_cloth.female_items"
+    }
+}
+
+
+# Expose a REST API endpoint for creating orders
+whitelisted_methods = [
+    "piloolo_market.api.order_api.create_order",
+    "piloolo_market.api.login.verify_login",
+    "piloolo_market.api.user_api.sign_up",
+    "piloolo_market.api.forgot_pass_api.send_password_reset",
+    "piloolo_market.api.order_history.get_user_orders",
+]
 
 # Scheduled Tasks
 # ---------------
