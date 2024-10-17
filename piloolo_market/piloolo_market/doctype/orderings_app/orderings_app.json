@@ -38,6 +38,7 @@
   {
    "fieldname": "total_amount",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Total Amount"
   },
   {
@@ -132,6 +133,7 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Draft\nPending\nProcessing\nShipped\nDelivered\nCancelled"
   },
@@ -142,12 +144,13 @@
   {
    "fieldname": "currency",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Currency"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-09 05:32:42.157196",
+ "modified": "2024-10-09 22:04:03.287817",
  "modified_by": "Administrator",
  "module": "Piloolo Market",
  "name": "Orderings App",

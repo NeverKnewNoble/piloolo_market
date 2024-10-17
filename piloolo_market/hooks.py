@@ -160,7 +160,7 @@ doc_events = {
     },
     "Doctype4": {
         "on_update": "piloolo_market.api.women_cloth.female_items"
-    }
+    },
 }
 
 

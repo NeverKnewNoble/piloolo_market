@@ -2,7 +2,7 @@ import frappe
 from frappe import _
 
 @frappe.whitelist(allow_guest=True)
-def send_password_reset():
+def send_password_reset(self=None, method=None):
     # Extract 'email' from the request body
     email = frappe.form_dict.get('email')
 

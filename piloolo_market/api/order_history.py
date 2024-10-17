@@ -2,7 +2,7 @@ import frappe
 from frappe import _
 
 @frappe.whitelist(allow_guest=True)
-def get_user_orders():
+def get_user_orders(self=None, method=None):
     try:
         # Get email from request parameters
         email = frappe.form_dict.get('email')
