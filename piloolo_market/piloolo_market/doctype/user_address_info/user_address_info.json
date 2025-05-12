@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:user",
  "creation": "2024-09-30 14:11:26.735577",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -21,7 +22,8 @@
    "fieldname": "user",
    "fieldtype": "Link",
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "unique": 1
   },
   {
    "fieldname": "first_name",
@@ -35,7 +37,7 @@
   },
   {
    "fieldname": "phone_number",
-   "fieldtype": "Phone",
+   "fieldtype": "Data",
    "label": "Phone Number"
   },
   {
@@ -72,10 +74,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-03 23:47:11.318948",
+ "modified": "2025-05-04 09:58:57.771926",
  "modified_by": "Administrator",
  "module": "Piloolo Market",
  "name": "User Address Info",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

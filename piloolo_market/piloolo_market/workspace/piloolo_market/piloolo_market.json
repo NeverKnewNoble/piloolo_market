@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"jPLnKokiME\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Piloolo Market</span>\",\"col\":12}},{\"id\":\"9SyLJGuyy8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":12}},{\"id\":\"-YmkLlfS7l\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"s5kqOcyIv_\",\"type\":\"card\",\"data\":{\"card_name\":\"User Information\",\"col\":4}},{\"id\":\"cgzsSYitfs\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales\",\"col\":4}}]",
+ "content": "[{\"id\":\"jPLnKokiME\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Piloolo Market</span>\",\"col\":12}},{\"id\":\"SNvVPLBV1b\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Daily Orders\",\"col\":4}},{\"id\":\"LfhkuqaGxf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Orders\",\"col\":4}},{\"id\":\"9SyLJGuyy8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":12}},{\"id\":\"TRVIbgUBsN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Welcome To Piloolo Collections Control Center</b></span>\",\"col\":12}},{\"id\":\"-YmkLlfS7l\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"s5kqOcyIv_\",\"type\":\"card\",\"data\":{\"card_name\":\"User Information\",\"col\":4}},{\"id\":\"W0TlM9KjT8\",\"type\":\"card\",\"data\":{\"card_name\":\"Orders\",\"col\":4}},{\"id\":\"cgzsSYitfs\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales\",\"col\":4}}]",
  "creation": "2024-09-30 09:06:42.583575",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,45 +13,6 @@
  "is_hidden": 0,
  "label": "Piloolo Market",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Inventory",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Products",
-   "link_count": 0,
-   "link_to": "Item",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Product Prices",
-   "link_count": 0,
-   "link_to": "Item Price",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Price List",
-   "link_count": 0,
-   "link_to": "Price List",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -105,7 +66,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "User Information",
-   "link_count": 3,
+   "link_count": 4,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -133,19 +94,96 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Orderings App",
+   "label": "Cart",
+   "link_count": 0,
+   "link_to": "Cart",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Feedback",
+   "link_count": 0,
+   "link_to": "Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Orders",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Orders",
    "link_count": 0,
    "link_to": "Orderings App",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Inventory",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Products",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Product Prices",
+   "link_count": 0,
+   "link_to": "Item Price",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Price Rates",
+   "link_count": 0,
+   "link_to": "Price List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-10-04 09:56:20.708907",
+ "modified": "2025-05-04 10:10:14.738110",
  "modified_by": "Administrator",
  "module": "Piloolo Market",
  "name": "Piloolo Market",
- "number_cards": [],
+ "number_cards": [
+  {
+   "label": "Daily Orders",
+   "number_card_name": "Daily Orders"
+  },
+  {
+   "label": "Open Orders",
+   "number_card_name": "Open Orders"
+  }
+ ],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,

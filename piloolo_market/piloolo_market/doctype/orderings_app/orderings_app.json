@@ -8,6 +8,7 @@
  "field_order": [
   "order_status_section",
   "status",
+  "payment_status",
   "column_break_essq",
   "currency",
   "section_break_frgr",
@@ -28,7 +29,9 @@
   "column_break_uqrf",
   "usr_last_name",
   "phone_number",
-  "address_line_2_optional"
+  "address_line_2_optional",
+  "section_break_ljrf",
+  "expected_delivery_date"
  ],
  "fields": [
   {
@@ -37,9 +40,10 @@
   },
   {
    "fieldname": "total_amount",
-   "fieldtype": "Int",
+   "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Total Amount"
+   "label": "Total Amount",
+   "precision": "2"
   },
   {
    "fieldname": "column_break_gooe",
@@ -123,6 +127,7 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Email"
   },
   {
@@ -135,7 +140,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Draft\nPending\nProcessing\nShipped\nDelivered\nCancelled"
+   "options": "Pending\nProcessing\nShipped\nDelivered\nCancelled"
   },
   {
    "fieldname": "column_break_essq",
@@ -146,11 +151,27 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Currency"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Status",
+   "options": "Pending payment\nReceived payment"
+  },
+  {
+   "fieldname": "section_break_ljrf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expected_delivery_date",
+   "fieldtype": "Date",
+   "label": "Expected delivery date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-09 22:04:03.287817",
+ "modified": "2025-05-11 18:01:12.208135",
  "modified_by": "Administrator",
  "module": "Piloolo Market",
  "name": "Orderings App",
