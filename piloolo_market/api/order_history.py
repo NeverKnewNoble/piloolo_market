@@ -16,7 +16,10 @@ def get_user_orders(self=None, method=None):
         # Fetch orders created by the specified user
         orders = frappe.get_all('Orderings App',
                                 filters={'email': email},
-                                fields=['name', 'total_amount', 'shipping_fee', 'usr_first_name', 'usr_last_name', 'location', 'email', 'status'])
+        fields=['name', 'total_amount', 'shipping_fee', 
+                 'location', 'address_line_1', 'email','status', 
+                 'payment_status', 'expected_delivery_date',])
+
 
         # Log the filtered results for debugging
         frappe.logger().info(f"Filtered Orders: {orders}")
@@ -26,9 +29,11 @@ def get_user_orders(self=None, method=None):
             order_doc = frappe.get_doc('Orderings App', order['name'])
             order['items'] = [{
                 "item": item.item,
+                "item_name": item.item_name,
                 "item_price": item.item_price,
                 "item_size": item.size,
-                "quantity": item.quantity  # Assuming you have a quantity field in your items table
+                "quantity": item.quantity,
+                "image_path": item.image_path
             } for item in order_doc.items]
         
         return {"status": "success", "orders": orders}

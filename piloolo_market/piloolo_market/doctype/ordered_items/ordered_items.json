@@ -7,26 +7,28 @@
  "engine": "InnoDB",
  "field_order": [
   "item",
-  "item_price",
+  "item_name",
   "size",
-  "quantity"
+  "quantity",
+  "item_price",
+  "item_total",
+  "image_path"
  ],
  "fields": [
   {
    "fetch_from": "item_price.item_name",
    "fieldname": "item",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Item",
-   "options": "Item Price"
+   "options": "Item"
   },
   {
-   "fetch_from": "item.price_list_rate",
    "fieldname": "item_price",
-   "fieldtype": "Link",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Item Price",
-   "options": "Item Price"
+   "options": "Item Price",
+   "precision": "2"
   },
   {
    "fieldname": "size",
@@ -39,12 +41,32 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Quantity"
+  },
+  {
+   "fieldname": "image_path",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Image Path"
+  },
+  {
+   "fieldname": "item_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-10-05 12:10:30.114236",
+ "modified": "2025-05-10 17:19:23.035426",
  "modified_by": "Administrator",
  "module": "Piloolo Market",
  "name": "ordered Items",

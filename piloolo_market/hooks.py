@@ -161,7 +161,38 @@ doc_events = {
     "Doctype4": {
         "on_update": "piloolo_market.api.women_cloth.female_items"
     },
+    "Doctype5": {
+        "on_update": "piloolo_market.api.add_to_cart.add_to_cart"
+    },
+    "Doctype6": {
+        "on_update": "piloolo_market.api.add_to_cart.get_current_cart"
+    },
+    "Doctype7": {
+        "on_update": "piloolo_market.api.add_to_cart.remove_cart_item"
+    },
+    "Doctype8": {
+        "on_update": "piloolo_market.api.user_address_info.save_user_address_info"
+    },
+    "Doctype9": {
+        "on_update": "piloolo_market.api.user_address_info.get_user_address_info"
+    },
+    "Doctype10": {
+        "on_update": "piloolo_market.api.feedback.submit_feedback"
+    },
+    "Doctype11": {
+        "on_update": "piloolo_market.api.feedback.get_all_feedback"
+    },
+    "Doctype12": {
+        "on_update": "piloolo_market.api.feedback.delete_feedback_by_index"
+    },
+    "Doctype13": {
+        "on_update": "piloolo_market.api.cancel_order.cancel_order"
+    },
+    "Doctype14": {
+        "on_update": "piloolo_market.api.add_to_cart.clear_cart"
+    },
 }
+
 
 
 # Expose a REST API endpoint for creating orders

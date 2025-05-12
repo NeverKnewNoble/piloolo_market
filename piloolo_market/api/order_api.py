@@ -27,7 +27,6 @@ def create_order(order_data=None):
             "address_line_2_optional": order_data.get("address_line_2_optional"),
             "email": order_data.get("email"),
             "currency": order_data.get("currency"),
-            # You can add more fields as required
         })
         
         # Add items to the child table 'ordered Items'
@@ -37,7 +36,9 @@ def create_order(order_data=None):
                     "item": item.get("item"),
                     "item_price": item.get("item_price"),
                     "size": item.get("item_size"),
-                    "quantity": item.get("item_quantity"), 
+                    "quantity": item.get("item_quantity"),
+                    "item_total": item.get("item_total"),
+                    "image_path": item.get("item_image"),
                 })
 
         # Save the document
@@ -54,4 +55,4 @@ def create_order(order_data=None):
 
 
 
-# # http://127.0.0.1:8001/api/v2/method/piloolo_market.api.order_api.create_order
+# http://127.0.0.1:8001/api/v2/method/piloolo_market.api.order_api.create_order
