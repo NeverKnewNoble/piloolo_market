@@ -88,8 +88,7 @@ def get_items(currency=None):
             SELECT 
                 item.item_code,
                 item.item_name,
-                item.image,
-                item.custom_item_description,              
+                item.image,             
                 item.custom_stock_on_site_status,
                 price.currency,
                 price.price_list_rate
